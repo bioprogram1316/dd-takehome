@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div class="wrapper">
+<div class="container">
     <!-- Sidebar -->
     <nav id="sidebar">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,8 +28,19 @@
         </div>
         </nav>
     </nav>
+    <div class="row">
+        <div class="col-sm">
+            <h3>Modern monitoring & analytics</h3>
+            <h4>See inside any stack, any app, at any scale, anywhere.</h4>
+            <button type="button" class="btn btn-secondary btn-lg">TRY FREE</button>
+        </div>
+        <div class="col">
+            {{ partial "pricing.html" }}
+        </div>
+    </div>
+    <div class="row">
+        {{ partial "card-column.html" }}
+    </div>
 </div>
-<div class="container">
-    {{ partial "/pricing/list.html" }}
-</div>
+
 {{ end }}
