@@ -59,12 +59,48 @@
     background-color: inherit;
 }
 
+#card1 {
+    position: relative;
+    padding: 10px 20px;
+}
+
+#card1:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 5%;
+    height: 90%;
+    border-right: 1px solid lightgrey;
+}
+
+#card1 .card-link {
+    color: #5700f8;
+}
+
 #card2 .card-header {
     color: #03e647;
     border: none;
     text-transform: uppercase;
     font-weight: bold;
     background-color: inherit;
+}
+
+#card2 {
+    position: relative;
+    padding: 10px 20px;
+}
+
+#card2:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 5%;
+    height: 90%;
+    border-right: 1px solid lightgrey;
+}
+
+#card2 .card-link {
+    color: #03e647;
 }
 
 #card3 .card-header {
@@ -75,6 +111,10 @@
     background-color: inherit;
 }
 
+#card3 .card-link {
+    color: #f83a00;
+}
+
 .card-footer {
     background-color: inherit;
     border: none;
@@ -82,6 +122,8 @@
 
 .card-link {
     text-decoration: underline;
+    text-transform: capitalize;
+    text-underline-offset: 25%;
 }
 
 .footer {
