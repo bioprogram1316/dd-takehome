@@ -7,11 +7,10 @@
 
 #sidebar {
     width: 150px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 999;
     background: #6f29f1;
     color: #fff;
     transition: all 0.3s;
@@ -30,6 +29,10 @@
 .wrapper .container-fluid {
     margin-left: 160px;
     margin-top: 30px;
+}
+
+.wrapper .container-fluid .row {
+    margin-bottom: 40px;
 }
 
 .wrapper .container-fluid .btn {
@@ -111,6 +114,11 @@
     background-color: inherit;
 }
 
+#card3 {
+    position: relative;
+    padding: 10px 20px;
+}
+
 #card3 .card-link {
     color: #f83a00;
 }
@@ -126,8 +134,100 @@
     text-underline-offset: 25%;
 }
 
-.footer {
-    background-color: rgb(63, 60, 60);
-    position: sticky;
+.card-columns {
+    display: inline-block;
+    column-count: 2;
 }
+
+.card-columns .card {
+    margin: 20px;
+    border-radius: 0;
+}
+
+.footer {
+    background-image: linear-gradient(rgb(70, 69, 69), black);
+    position: static;
+    padding: 40px;
+    height: 320px;
+    color: lightgrey;
+}
+
+.footer .btn {
+    border: 1px solid grey; 
+    color: lightgrey;
+    background-color: inherit;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+
+.footer h6 {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+#product-list li {
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+
+#product-list a {
+    border: none;
+    background-color: inherit;
+    color: grey;
+    padding: 0;
+}
+
+#about-list a {
+    border: none;
+    background-color: inherit;
+    color: grey;
+    padding: 0;
+}
+
+#social-list a {
+    border: none;
+    background-color: inherit;
+    color: grey;
+    padding: 0;
+}
+
+#last-row a {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#terms {
+    position: relative;
+}
+
+#terms:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 30%;
+    height: 40%;
+    border-right: 2px solid #fff;
+}
+
+#privacy {
+    position: relative;
+}
+
+#privacy:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 30%;
+    height: 40%;
+    border-right: 2px solid #fff;
+}
+
 </style>
