@@ -6,7 +6,7 @@
 }
 
 #sidebar {
-    width: 150px;
+    width: 190px;
     position: sticky;
     top: 0;
     left: 0;
@@ -16,14 +16,27 @@
     transition: all 0.3s;
 }
 
+#sidebar img {
+    margin-left: 15px;
+    padding-bottom: 30px;
+}
+
 #sidebar a {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 #sidebar a:hover {
     text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#sidebar #login {
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 40px;
 }
 
 .wrapper .container-fluid {
@@ -33,7 +46,7 @@
 
 .wrapper .container-fluid .row {
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .wrapper .container-fluid .btn {
@@ -55,6 +68,11 @@
     border: none;
 }
 
+.card-group .card .card-body {
+    width: 100%;
+    padding: 0;
+}
+
 #card1 .card-header {
     color: #5700f8;
     border: none;
@@ -62,6 +80,7 @@
     font-weight: bold;
     background-color: inherit;
     font-size: 15px;
+    padding-left: 0;
 }
 
 #card1 {
@@ -89,6 +108,7 @@
     font-weight: bold;
     background-color: inherit;
     font-size: 15px;
+    padding-left: 0;
 }
 
 #card2 {
@@ -116,6 +136,7 @@
     font-weight: bold;
     background-color: inherit;
     font-size: 15px;
+    padding-left: 0;
 }
 
 #card3 {
@@ -130,6 +151,7 @@
 .card-footer {
     background-color: inherit;
     border: none;
+    padding-top: 40px;
 }
 
 .card-link {
@@ -152,14 +174,40 @@
 
 }
 
+#top-text-apm {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+
+#bottom-text-apm {
+    font-size: 24px;
+    color: #fff;
+}
+
+#top-text-logs {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+
+#bottom-text-logs {
+    font-size: 24px;
+    color: #fff;
+}
+
 #top-text-infrastructure {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+    color: #fff;
 }
 
 #bottom-text-infrastructure {
     font-size: 24px;
+    color: #fff;
 }
 
 #image-text-card {
@@ -170,6 +218,49 @@
 #observability-card {
     box-shadow: 4px 4px 10px 0 rgba(160, 160, 160, 0.26);
     transform: translateZ(0);
+}
+
+#observability-card .card-title {
+    color: #813dff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#observability-card .card-text {
+    font-size: 24px;
+}
+
+#observability-card a {
+    color: #813dff;
+    text-underline-offset: 40%;
+}
+
+#observability-card2 .card-title {
+    color: #813dff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#observability-card2 .card-text {
+    font-size: 24px;
+}
+
+#observability-card2 a {
+    color: #813dff;
+    text-underline-offset: 40%;
+}
+
+#observability-card2 {
+    box-shadow: 4px 4px 10px 0 rgba(160, 160, 160, 0.26);
+    transform: translateZ(0);
+}
+
+.carousel-control-next {
+    width: 6%;
+    bottom: 60%;
+    filter: invert(100%);
 }
 
 .footer {
