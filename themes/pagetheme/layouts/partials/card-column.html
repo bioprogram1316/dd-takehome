@@ -1,67 +1,112 @@
-<div class="card-columns">
-    <div class="card">
-        <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
-        <div class="card-img-overlay">
-            <p class="card-text text-center mt-4 pt-5" id="top-text-apm">APM</p>
-            <p class="card-text text-center" id="bottom-text-apm">Get full visibility into modern applications</p>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
-        <div class="card-img-overlay">
-            <p class="card-text text-center mt-4 pt-5" id="top-text-logs">Logs Management</p>
-            <p class="card-text text-center" id="bottom-text-logs">Analyze and explore log data in context</p>
-        </div>
-    </div>
-    <div class="card" id="image-text-card">
-        <div class="card-body">
-            <p class="card-text">"Datadog has been instrumental in managing our real-time infrastructure,
-                globally distributed in 5 data centers across hundreds of instances, and 
-                thousands of different metrics and dimensions for each host. I can't believe
-                there was a time when we didn't have Datadog."
-            </p>
-            <p class="card-text"><strong>Valentino Volonghi</strong></p>
-            <p class="card-text">Chief Technology Officer</p>
-            <a href="#" class="card-link">See More Stories</a>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
-        <div class="card-img-overlay">
-            <p class="card-text text-center mt-4 pt-5" id="top-text-infrastructure">Infrastructure</p>
-            <p class="card-text text-center" id="bottom-text-infrastructure">See across systems, apps, and services</p>
-        </div>
-    </div>
-    <div id="carouselControls" class="carousel slide" data-interval="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card" id="observability-card" alt="First slide">
-                    <div class="card-body mb-5">
-                        <h2 class="card-title">Observability</h2>
-                        <p class="card-text">With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack</p>
-                        <a href="#" class="card-link">Read More</a>
+<div class="container-fluid" id="card-columns">
+        <div class="col" id="first-col">
+            <div class="card">
+                <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <p class="card-text text-center mt-4 pt-5" id="top-text-apm">APM</p>
+                    <p class="card-text text-center" id="bottom-text-apm">Get full visibility into modern applications</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <p class="card-text text-center mt-4 pt-5" id="top-text-logs">Logs Management</p>
+                    <p class="card-text text-center" id="bottom-text-logs">Analyze and explore log data in context</p>
+                </div>
+            </div>
+            <div class="card" id="image-text-card">
+                <div class="row no-gutters m-0">
+                    <div class="col">
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
                     </div>
-                    <div class="card-footer mb-2">
-                        <img class="card-img img-fluid rounded-0" src="https://via.placeholder.com/280x160.png" alt="Card image">
+                    <div class="col">
+                        <div class="card" id="text-card-in-card">
+                            <p class="card-text">"Datadog has been instrumental in managing our real-time infrastructure,
+                                globally distributed in 5 data centers across hundreds of instances, and 
+                                thousands of different metrics and dimensions for each host. I can't believe
+                                there was a time when we didn't have Datadog."
+                            </p>
+                            <p class="card-text"><strong>Valentino Volonghi</strong></p>
+                            <p class="card-text">Chief Technology Officer</p>
+                            <a href="#" class="card-link">See More Stories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters m-0">
+                    <div class="col">
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/200x200" alt="image">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" alt="Second slide">
-                <div class="card" id="observability-card2">
-                    <div class="card-body">
-                        <h2 class="card-title">Observability 2</h2>
-                        <p class="card-text">With turn-key integrations, Datadog semlessly aggregates metrics and events across the full devops stack</p>
-                        <a href="#" class="card-link">Read More</a>
+        </div>
+        <div class="col" id="second-col">
+            <div class="card">
+                <img class="card-img  img-fluid rounded-0" src="https://via.placeholder.com/640x360.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <p class="card-text text-center mt-4 pt-5" id="top-text-infrastructure">Infrastructure</p>
+                    <p class="card-text text-center" id="bottom-text-infrastructure">See across systems, apps, and services</p>
+                </div>
+            </div>
+            <div class="card" id="observability-card">
+                <div id="carouselControls" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" id="observability-card-inner" alt="First slide">
+                                <div class="card-body mb-5">
+                                    <h2 class="card-title">Observability</h2>
+                                    <p class="card-text">With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img img-fluid rounded-0" src="https://via.placeholder.com/280x160.png" alt="Card image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" alt="Second slide">
+                            <div class="card" id="observability-card2">
+                                <div class="card-body mb-5">
+                                    <h2 class="card-title">Observability 2</h2>
+                                    <p class="card-text">With turn-key integrations, Datadog semlessly aggregates metrics and events across the full devops stack</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img img-fluid rounded-0" src="https://via.placeholder.com/280x160.png" alt="Card image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <img class="card-img img-fluid rounded-0" src="https://via.placeholder.com/460x309.png" alt="Card image">
-                    </div>
+                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    </div>       
 </div>

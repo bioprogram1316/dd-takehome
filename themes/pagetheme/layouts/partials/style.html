@@ -160,18 +160,18 @@
     text-underline-offset: 25%;
 }
 
-.card-columns {
-    display: inline-block;
+#card-columns {
+    display: flex;
     column-count: 2;
+    margin: 0;
+    padding: 0;
 }
 
-.card-columns .card {
-    margin: 20px;
+#card-columns .card {
     border-radius: 0;
-    width: 94%;
-    background-color: rgb(245, 244, 244);
+    width: 100%;
     border: none;
-
+    margin-bottom: 30px;
 }
 
 #top-text-apm {
@@ -213,11 +213,21 @@
 #image-text-card {
     box-shadow: 4px 4px 10px 0 rgba(160, 160, 160, 0.26);
     transform: translateZ(0);
+    background-color: rgb(245, 244, 244);
+}
+
+#text-card-in-card {
+    background-color: inherit;
 }
 
 #observability-card {
     box-shadow: 4px 4px 10px 0 rgba(160, 160, 160, 0.26);
     transform: translateZ(0);
+    background-color: rgb(245, 244, 244);
+}
+
+#observability-card-inner {
+    background-color: inherit;
 }
 
 #observability-card .card-title {
@@ -253,8 +263,7 @@
 }
 
 #observability-card2 {
-    box-shadow: 4px 4px 10px 0 rgba(160, 160, 160, 0.26);
-    transform: translateZ(0);
+    background-color: rgb(245, 244, 244);
 }
 
 .carousel-control-next {
@@ -355,6 +364,39 @@
     top: 30%;
     height: 40%;
     border-right: 2px solid #fff;
+}
+
+@media (max-width: 750px) {
+    .wrapper .container-fluid .row .col {
+        width: 100px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 970px) {
+    .wrapper .container-fluid {
+        margin-left: 0;
+    }
+    #col1 {
+        height: 420px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        max-width: fit-content;
+    }
+    #col2 {
+        height: fit-content;
+        display: contents;
+    }
+    #col2 .card-group {
+        margin-left: 10px;
+    }
+    #first-col {
+        padding: 0;
+        height: fit-content;
+        margin-left: 10px;
+    }
+    #second-col {
+        padding-right: 0;
+    }
 }
 
 </style>
